@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel='stylesheet' href='estilos.css'>
+
+</head>
+<style>
+    body{
+      font-family: sans-serif;
+      font-size: 12px;
+      color: #798e94;
+    }
+    body{
+      width: 400px;
+      margin: auto;
+      background-color: #E2ECEE;
+    }
+    .contacto{
+      border: 1px solid #CED5D7;
+      border-radius: 6%;
+      padding: 45px 45px 20px;
+      margin-top: 50px;
+      background-color: white;
+      box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+      
+    }
+    .contacto label{
+        display: block;
+        font-weight: bold;
+
+    }
+    .contacto div{
+        margin-bottom: 15px;
+    }
+    .contacto input[type='text'], .contacto textarea{
+        padding: 7px 6px;
+        width: 294px;
+        border: 1px solid #CED5D7;
+        resize: none;
+        box-shadow: 0 0 0 3px #EEF5F7;
+        margin: 5px 0;
+    }
+    
+    .contacto input[type='text'],:focus, .contacto textarea:focus{
+        outline: none;
+        box-shadow: 0 0 0 3px #dde9ec;
+    }
+
+    .contacto input[type='sumit']{
+        border: 1px solid #CED5D7;
+        box-shadow: 0 0 0 3px #EEF5F7;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px white;
+
+        background: #e4f1f6;
+        background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+        background: -webkit-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+        
+    }
+    .contacto input[type='submit']:hover{
+        background: #edfcff;
+        background: -moz-linear-gradient(top, #cfe6ef 0% #cfe6ef 100%);
+        background: -webkit-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+
+
+    }
+    .contacto input[type='submit']:active{
+        background: #cfe6ef;
+        background: -moz-linear-gradient(top, #cfe6ef 0% #cfe6ef 100%);
+        background: -webkit-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    }
+
+
+
+
+</style>
+<body>
+    <br><br>
+    <br><br>
+    <br><br>
+    <center>
+    <h1>Contáctenos</h1>
+    <h2>Intevo S.A</h2>
+    <form class="contacto">
+        <div><label>Tu nombre</label><input type="text" value="" placeholder="Digite su nombre"></div>
+        <div><label>Tu Email</label><input type="text" value="" placeholder="@E-mail"></div>
+        <div><label>Asunto</label><input type="text" value=""></div>
+        <div><label>Mensaje</label><textarea rows="6"></textarea></div>
+        <div><input type='submit'value='Enviar Mensaje'></div>
+        
+     </form>
+    </center>
+    
+</body>
+
+</html>
